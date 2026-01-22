@@ -75,7 +75,7 @@ Multimodal Data → Embedding Generation → Qdrant Vector Database
 
 ## Configuration
 
-Edit `config/settings.py` to customize:
+Edit `global_setting/settings.py` to customize:
 - Vector embedding dimension (default: 512)
 - Memory decay factor (default: 0.95)
 - Qdrant collection name and storage path
@@ -94,37 +94,6 @@ DRIS> stats
 DRIS> exit
 ```
 
-## Deployment Assumptions
-
-- Qdrant instance accessible (in-memory or external)
-- 2GB+ RAM for 10,000+ disaster events
-- Python 3.8+
-- Optional: CLIP models for enhanced embeddings (automatic fallback to random vectors)
-
-## Documentation
-
-See [DOCUMENTATION.md](DOCUMENTATION.md) for:
-- Detailed problem statement
-- System architecture
-- Multimodal strategy
-- Search/memory/recommendation logic
-- Limitations and ethical considerations
-- Setup instructions
-- Evaluation criteria
-
-## Evaluation Criteria
-
-✓ Correct and meaningful use of Qdrant
-✓ Quality of retrieval and memory design
-✓ Societal relevance and impact
-✓ System clarity and robustness
-✓ Thoughtful documentation and reasoning
-✓ Creativity without sacrificing correctness
-
 ## License
 
 Open source - Emergency Response Systems
-
-## Version
-
-1.0.0 (2026-01-22)
